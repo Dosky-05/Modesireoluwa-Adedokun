@@ -1,0 +1,104 @@
+.skills { position: relative; }
+
+.skills__header {
+  margin-bottom: 56px;
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.skill-card {
+  background: var(--surface);
+  border: 1px solid var(--border-dim);
+  border-radius: 10px;
+  padding: 24px;
+  transition: border-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.skill-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(to right, var(--cyan), var(--green));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease);
+}
+.skill-card:hover {
+  border-color: var(--border);
+  box-shadow: 0 8px 40px rgba(0,212,255,0.08);
+  transform: translateY(-4px);
+}
+.skill-card:hover::before { transform: scaleX(1); }
+
+.skill-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.skill-card__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.skill-card__icon {
+  width: 44px; height: 44px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--cyan-dim);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 20px;
+  color: var(--cyan);
+}
+
+.skill-card__info h3 {
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.skill-card__pct {
+  font-size: 11px;
+  color: var(--cyan);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+
+.skill-card__bar {
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.skill-card__fill {
+  height: 100%;
+  width: var(--fill, 0%);
+  background: linear-gradient(to right, var(--cyan), var(--green));
+  border-radius: 2px;
+  transform-origin: left;
+  animation: fillBar 1.2s var(--ease) forwards;
+  transform: scaleX(0);
+}
+.skill-card.visible .skill-card__fill {
+  animation: fillBar 1.2s var(--ease) forwards;
+}
+
+@keyframes fillBar {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+@media (max-width: 600px) {
+  .skills__grid { grid-template-columns: 1fr; }
+}
