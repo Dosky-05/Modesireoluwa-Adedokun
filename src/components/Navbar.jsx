@@ -21,16 +21,19 @@ export default function Navbar() {
   return (
     <header className={`nav ${scrolled ? 'nav--scrolled' : ''}`}>
       <div className="nav__inner container">
-        <button className="nav__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+
+        {/* Logo — left */}
+        <button className="nav__logo" onClick={() => handleNav('hero')}>
           AM<span>_</span>
         </button>
 
+        {/* Status — center */}
         <div className="nav__status">
           <span className="status-dot" />
           available for work
         </div>
 
-        {/* Desktop */}
+        {/* Links — right */}
         <nav className="nav__links">
           {links.map((l, i) => (
             <button key={l} className="nav__link" data-idx={`0${i + 1}`} onClick={() => handleNav(l)}>
@@ -42,7 +45,7 @@ export default function Navbar() {
           </a>
         </nav>
 
-        {/* Hamburger */}
+        {/* Hamburger — mobile only */}
         <button
           className={`nav__ham ${menuOpen ? 'is-open' : ''}`}
           onClick={() => setMenuOpen(o => !o)}
@@ -52,24 +55,23 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile dropdown — slides down below the bar */}
-      <div className={`nav__dropdown ${menuOpen ? 'open' : ''}`}>
+      <div className={`nav__overlay ${menuOpen ? 'open' : ''}`}>
         {links.map((l, i) => (
           <button
             key={l}
-            className="nav__dropdown-link"
+            className="nav__overlay-link"
+            style={{ animationDelay: menuOpen ? `${i * 0.07 + 0.05}s` : '0s' }}
             onClick={() => handleNav(l)}
           >
-            <span className="dd-num">0{i + 1}</span>
             {l}
           </button>
         ))}
         <a
           href="mailto:adedokunmodesireoluwa@gmail.com"
-          className="nav__dropdown-cta"
+          className="nav__overlay-cta"
+          style={{ animationDelay: menuOpen ? `${links.length * 0.07 + 0.05}s` : '0s' }}
           onClick={() => setMenuOpen(false)}
-        >
-          Hire Me
+        > Hire Me
         </a>
       </div>
     </header>

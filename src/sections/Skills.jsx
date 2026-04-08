@@ -1,11 +1,14 @@
 import './Skills.css';
 
 const skills = [
-  { name: 'React',        icon: 'fa-brands fa-react',    level: 85 },
-  { name: 'JavaScript',  icon: 'fa-brands fa-js',        level: 80 },
+  { name: 'React', icon: 'fa-brands fa-react', level: 85 },
+  { name: 'JavaScript', icon: 'fa-brands fa-js', level: 80 },
   { name: 'Tailwind CSS', icon: 'fa-brands fa-css3-alt', level: 88 },
-  { name: 'Node.js',     icon: 'fa-brands fa-node-js',   level: 65 },
-  { name: 'Photoshop',   icon: 'fa-solid fa-pen-nib',    level: 78 },
+  { name: 'Node.js', icon: 'fa-brands fa-node-js', level: 65 },
+  { name: 'Photoshop', icon: 'fa-solid fa-pen-nib', level: 78 },
+  { name: 'Wordpress', icon: 'fa-brands fa-wordpress', level: 83 },
+  { name: 'HTML/CSS', icon: 'fa-brands fa-html5', level: 90 },
+  { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap', level: 85 },
 ];
 
 export default function Skills() {
