@@ -20,8 +20,8 @@ export default function Footer() {
             <i className="fa fa-envelope" />
           </a>
           <a
-            href="/Modesireoluwa_Adedokun_CV.pdf"
-            download="Modesireoluwa_Adedokun_CV.pdf"
+            href="/Modesireoluwa_Adedokun_CV1.pdf"
+            download="Modesireoluwa_Adedokun_CV1.pdf"
             aria-label="Download CV"
             title="Download CV"
           >
