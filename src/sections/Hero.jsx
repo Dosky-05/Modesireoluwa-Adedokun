@@ -47,8 +47,8 @@ export default function Hero() {
               Get in Touch
             </button>
             <a
-              href="/Modesireoluwa_Adedokun_CV1.pdf"
-              download="Modesireoluwa_Adedokun_CV1.pdf"
+              href="/Modesireoluwa_Adedokun_CV.pdf"
+              download="Modesireoluwa_Adedokun_CV.pdf"
               className="hero__btn hero__btn--cv"
             >
               <i className="fa fa-download" /> Download CV
