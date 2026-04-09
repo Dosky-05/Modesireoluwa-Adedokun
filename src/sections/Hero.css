@@ -137,6 +137,21 @@
   color: var(--cyan);
 }
 
+.hero__btn--cv {
+  background: transparent;
+  border: 1px solid #00ff94;
+  color: #00ff94;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.hero__btn--cv:hover {
+  background: rgba(0, 255, 148, 0.08);
+  box-shadow: 0 0 20px rgba(0, 255, 148, 0.25);
+}
+
 .hero__socials {
   display: flex;
   gap: 12px;

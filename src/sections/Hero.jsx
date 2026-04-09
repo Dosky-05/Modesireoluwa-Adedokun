@@ -46,6 +46,13 @@ export default function Hero() {
             <button className="hero__btn hero__btn--ghost" onClick={() => scrollTo('contact')}>
               Get in Touch
             </button>
+            <a
+              href="/Modesireoluwa_Adedokun_CV.pdf"
+              download="Modesireoluwa_Adedokun_CV.pdf"
+              className="hero__btn hero__btn--cv"
+            >
+              <i className="fa fa-download" /> Download CV
+            </a>
           </div>
 
           <div className="hero__socials">

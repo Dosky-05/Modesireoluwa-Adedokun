@@ -19,6 +19,14 @@ export default function Footer() {
           <a href="mailto:adedokunmodesireoluwa@gmail.com">
             <i className="fa fa-envelope" />
           </a>
+          <a
+            href="/Modesireoluwa_Adedokun_CV.pdf"
+            download="Modesireoluwa_Adedokun_CV.pdf"
+            aria-label="Download CV"
+            title="Download CV"
+          >
+            <i className="fa fa-file-arrow-down" />
+          </a>
         </div>
       </div>
       <div className="container footer__bottom">
