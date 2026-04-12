@@ -27,7 +27,7 @@ const projects = [
     name: 'StudyForge',
     desc: 'An AI-powered study assistant that helps students learn smarter, generating study plans, quizzes and summaries.',
     tags: ['React.js', 'Tailwind CSS', 'Node.js', '+4'],
-    live: 'https://study-forge-frontend.vercel.app/',
+    live: 'https://study-forge-chi.vercel.app/',
     github: 'https://github.com/Dosky-05',
     icon: 'fa-solid fa-brain',
     headline: ['Learn Smarter,', 'Not Harder'],
