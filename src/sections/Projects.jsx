@@ -34,6 +34,17 @@ const projects = [
     color: '#00d4ff',
     headlineImg: '/images/Studyforge.png',
   },
+  {
+    name: 'Oasis',
+    desc: 'A Website Created for a Digital Tech freelance agency.',
+    tags: ['next.js', 'Tailwind CSS', 'Node.js', '+4'],
+    live: 'https://oasis-delta-wheat.vercel.app/',
+    github: 'https://github.com/Dosky-05',
+    iconImg: '/images/Oasislogo.png',
+    headline: ['Digital Vision,', 'Meets Execution'],
+    color: '#00d4ff',
+    headlineImg: '/images/Oasis.png',
+  },
 ];
 
 function CardMockup({ project }) {
