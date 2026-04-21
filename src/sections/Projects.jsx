@@ -36,7 +36,7 @@ const projects = [
   },
   {
     name: 'Oasis',
-    desc: 'A Website Created for a Digital Tech freelance agency.',
+    desc: 'A Website Created for a Digital Tech agency.',
     tags: ['next.js', 'Tailwind CSS', 'Node.js', '+4'],
     live: 'https://oasis-delta-wheat.vercel.app/',
     github: 'https://github.com/Dosky-05',
