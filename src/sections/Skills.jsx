@@ -9,6 +9,7 @@ const skills = [
   { name: 'Wordpress', icon: 'fa-brands fa-wordpress', level: 83 },
   { name: 'HTML/CSS', icon: 'fa-brands fa-html5', level: 90 },
   { name: 'Bootstrap', icon: 'fa-brands fa-bootstrap', level: 85 },
+  { name: 'Github', icon: 'fa-brands fa-github', level: 83 },
 ];
 
 export default function Skills() {
