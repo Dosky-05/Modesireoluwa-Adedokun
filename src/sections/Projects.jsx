@@ -36,7 +36,7 @@ const projects = [
   },
   {
     name: 'Oasis',
-    desc: 'A Website Created for a Digital Tech agency.',
+    desc: 'A Website Created for a Digital Tech agency, who offers various tech services.',
     tags: ['next.js', 'Tailwind CSS', 'Node.js', '+4'],
     live: 'https://oasis-delta-wheat.vercel.app/',
     github: 'https://github.com/Dosky-05',
@@ -44,6 +44,17 @@ const projects = [
     headline: ['Digital Vision,', 'Meets Execution'],
     color: '#00d4ff',
     headlineImg: '/images/Oasis.png',
+  },
+   {
+    name: 'Abbiescrib',
+    desc: 'A website created for a brand that deals in exquisite branded gift items, Built with a focus on bold visuals and smooth UX.',
+    tags: ['React.js', 'Tailwind CSS', 'React Router', '+1'],
+    live: 'https://abbiescrib.vercel.app/',
+    github: 'https://github.com/Dosky-05',
+    iconImg: '/images/Abbiescriblogo.png',
+    headline: ['Your Gift,', 'Our Craft'],
+    color: '#eb2096',
+    headlineImg: '/images/Abbiescrib.png',
   },
 ];
 
